@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ICT9|Quiz1</title>
+</head>
+<body>
+	<form>
+		<label> Enter name: </label>
+		<input type="text" id="firstname">
+		<p id="greetings">Hello!</p>
+		<button type="button" onclick="greet(name)">greet</button>
+	</form>
+
+	<script type="text/javascript">
+		function greet(name){ 
+			var name = document.getElementById('firstname').value; //id of input element
+			document.getElementById('greetings').innerHTML = 'Hello, ' + name;  //id of paragraph element
+		}
+	</script>
+</body>
+</html>
